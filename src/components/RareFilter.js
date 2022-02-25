@@ -21,7 +21,7 @@ class RareFilter extends React.Component {
 }
 
 RareFilter.propTypes = {
-  value: PropTypes.bool.isRequired,
+  value: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
 };
 

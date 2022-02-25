@@ -20,7 +20,7 @@ class Tryunfo extends React.Component {
 }
 
 Tryunfo.propTypes = {
-  checked: PropTypes.string.isRequired,
+  checked: PropTypes.bool.isRequired,
   handleChange: PropTypes.func.isRequired,
 };
 

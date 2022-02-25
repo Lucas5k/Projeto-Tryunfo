@@ -18,7 +18,7 @@ class SaveBtn extends React.Component {
 }
 
 SaveBtn.propTypes = {
-  disabled: PropTypes.func.isRequired,
+  disabled: PropTypes.bool.isRequired,
   handleChange: PropTypes.func.isRequired,
 };
 

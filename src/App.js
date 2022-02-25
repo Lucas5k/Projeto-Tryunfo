@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 import React from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
@@ -18,7 +19,7 @@ class App extends React.Component {
       hasTrunfo: false,
       isSaveButtonDisabled: true,
       nameFilter: '',
-      rareFilter: '',
+      rareFilter: 'todas',
       cards: [],
     };
   }
@@ -99,15 +100,16 @@ class App extends React.Component {
 
   renderizar = () => {
     const { cards, nameFilter, rareFilter } = this.state;
-
+    // rareFilter
     if (cards.length) {
-      return cards
-        .filter((card) => card.cardRare.includes(rareFilter))
+      const cardsToRender = rareFilter === 'todas' ? cards
+        : cards.filter((c) => c.cardRare === rareFilter);
+      return cardsToRender
         .filter((card) => card.cardName.includes(nameFilter))
-        .map((card) => (
+        .map((car) => (
           <Card
-            key={ card }
-            { ...card }
+            key={ car }
+            { ...car }
           />
         ));
     }
