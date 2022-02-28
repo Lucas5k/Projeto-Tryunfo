@@ -12,6 +12,7 @@ import Tryunfo from './Tryunfo';
 import DeleteBtn from './DeleteBtn';
 import FilterCards from './FilterCards';
 import RareFilter from './RareFilter';
+import TrunfoFilter from './trunfoFilter';
 
 class Form extends React.Component {
   render() {
@@ -30,12 +31,25 @@ class Form extends React.Component {
       deleteClick,
       nameFilter,
       rareFilter,
+      trunfoFilter,
     } = this.props;
     return (
       <section>
         <form>
-          <RareFilter value={ rareFilter } handleChange={ onInputChange } />
-          <FilterCards value={ nameFilter } handleChange={ onInputChange } />
+          <TrunfoFilter
+            checked={ trunfoFilter }
+            handleChange={ onInputChange }
+          />
+          <RareFilter
+            value={ rareFilter }
+            handleChange={ onInputChange }
+            disabled={ trunfoFilter }
+          />
+          <FilterCards
+            value={ nameFilter }
+            handleChange={ onInputChange }
+            disabled={ trunfoFilter }
+          />
           <NameInput value={ cardName } handleChange={ onInputChange } />
           <Description value={ cardDescription } handleChange={ onInputChange } />
           <Number1 value={ cardAttr1 } handleChange={ onInputChange } />
@@ -71,6 +85,7 @@ Form.propTypes = {
   deleteClick: PropTypes.func.isRequired,
   nameFilter: PropTypes.string.isRequired,
   rareFilter: PropTypes.string.isRequired,
+  trunfoFilter: PropTypes.bool.isRequired,
 };
 
 export default Form;

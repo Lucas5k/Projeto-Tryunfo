@@ -14,12 +14,13 @@ class App extends React.Component {
       cardAttr2: 0,
       cardAttr3: 0,
       cardImage: '',
-      cardRare: '',
+      cardRare: 'normal',
       cardTrunfo: false,
       hasTrunfo: false,
       isSaveButtonDisabled: true,
       nameFilter: '',
       rareFilter: 'todas',
+      trunfoFilter: false,
       cards: [],
     };
   }
@@ -98,10 +99,14 @@ class App extends React.Component {
     }
   }
 
+  // Requisito 11 só consegui refatorando o código com a ajuda da Queite Schneider e a branch dele.
+
   renderizar = () => {
-    const { cards, nameFilter, rareFilter } = this.state;
+    const { cards,
+      nameFilter, rareFilter, trunfoFilter } = this.state;
     // rareFilter
-    if (cards.length) {
+
+    if (!trunfoFilter) {
       const cardsToRender = rareFilter === 'todas' ? cards
         : cards.filter((c) => c.cardRare === rareFilter);
       return cardsToRender
@@ -113,6 +118,16 @@ class App extends React.Component {
           />
         ));
     }
+
+    return (
+      cards.filter((card) => card.cardTrunfo)
+        .map((trunfo) => (
+          <Card
+            key={ trunfo }
+            { ...trunfo }
+          />
+        ))
+    );
   }
 
   saveCards = () => this.setState({ cards: [] })
@@ -131,6 +146,7 @@ class App extends React.Component {
       hasTrunfo,
       nameFilter,
       rareFilter,
+      trunfoFilter,
     } = this.state;
     return (
       <div>
@@ -150,6 +166,7 @@ class App extends React.Component {
           deleteClick={ this.saveCards }
           nameFilter={ nameFilter }
           rareFilter={ rareFilter }
+          trunfoFilter={ trunfoFilter }
         />
         <Card
           cardName={ cardName }
