@@ -99,7 +99,7 @@ class App extends React.Component {
     }
   }
 
-  // Requisito 11 só consegui refatorando o código com a ajuda da Queite Schneider e a branch dele.
+  // Requisito 12 só consegui refatorando o código com a ajuda da Queite Schneider e a branch dele.
 
   renderizar = () => {
     const { cards,
