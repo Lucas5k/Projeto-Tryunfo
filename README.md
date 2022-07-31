@@ -15,7 +15,7 @@
 <p>npm start</p>
 
 Página Rodando na web
-<a href="https://projeto-app-receitas.vercel.app/">Clique aqui</a>
+<a href="https://projeto-tryunfo-umber.vercel.app/">Clique aqui</a>
 <p>para ver a versão final do nosso projeto no seu navegador.</p>
 
 <h2>Sobre o Projeto</h2>
