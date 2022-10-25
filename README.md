@@ -1,7 +1,7 @@
 # Projeto-Tryunfo
 
 ## :memo: Descrição
-<p>Esse foi o meu segundo projeto no modúlo de front-end, Essa aplicação simulará um jogo de Super Trunfo (Jogo de cartas), desde a criação das cartas do seu baralho até a funcionalidade de jogar. estava iniciando meu conhecimento em React.
+<p>Esse foi o meu segundo projeto no módulo de front-end, Essa aplicação simulará um jogo de Super Trunfo (Jogo de cartas), desde a criação das cartas do seu baralho até a funcionalidade de jogar. estava iniciando meu conhecimento em React.
 Projeto feito com os conceitos de Prop drilling e React com componente de classe.</p>
 
 ## :books: Funcionalidades
