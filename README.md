@@ -5,12 +5,12 @@
 Projeto feito com os conceitos de Prop drilling e React com componente de classe.</p>
 
 ## :books: Funcionalidades
-* <b>Funcionalidade 1</b>: Criar um baralho;
-* <b>Funcionalidade 2</b>: Adicionar e remover uma carta do baralho;
-* <b>Funcionalidade 3</b>: Visualizar todas as cartas que foram adicionadas ao baralho;
-* <b>Funcionalidade 4</b>: Jogar com o baralho criado.
+<ol><b>Funcionalidade 1</b>: Criar um baralho;</ol>
+<ol><b>Funcionalidade 2</b>: Adicionar e remover uma carta do baralho;</ol>
+<ol><b>Funcionalidade 3</b>: Visualizar todas as cartas que foram adicionadas ao baralho;</ol>
+<ol><b>Funcionalidade 4</b>: Jogar com o baralho criado.</ol>
 
-## :wrench: <h3>Tecnologias utilizadas</h3>
+## <h3>:wrench: Tecnologias utilizadas</h3>
 * React (componente de classe)
 
 ## :rocket: Rodando o projeto
