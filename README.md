@@ -10,7 +10,7 @@ Projeto feito com os conceitos de Prop drilling e React com componente de classe
 * <b>Funcionalidade 3</b>: Visualizar todas as cartas que foram adicionadas ao baralho;
 * <b>Funcionalidade 4</b>: Jogar com o baralho criado.
 
-## :wrench: Tecnologias utilizadas
+## :wrench: <h3>Tecnologias utilizadas</h3>
 * React (componente de classe)
 
 ## :rocket: Rodando o projeto
